@@ -1,10 +1,10 @@
 import pandas as pd
-from pyarrow import show_versions
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 from scipy.spatial import Voronoi, voronoi_plot_2d
 import numpy as np
 
+# https://www.ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes/earthquakes/intensity-database-1638-1985 
 df = pd.read_csv("eqint_tsqp.csv")[["LONGITUDE", "LATITUDE"]]
 df = df.dropna()
 
@@ -35,5 +35,4 @@ voronoi_plot_2d(vor, show_vertices=False, show_points=False, line_colors='white'
 plt.scatter(X[:,0], X[:,1], c=kmeans.labels_,s=10)
 plt.scatter(kmeans.cluster_centers_[:,0],kmeans.cluster_centers_[:,1],c='r')
 plt.show()
-
 
