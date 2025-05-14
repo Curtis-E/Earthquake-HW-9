@@ -6,7 +6,7 @@ This project applies K-means clustering to U.S. Earthquake Intensity Database (1
 
 Dataset: https://www.ncei.noaa.gov/products/natural-hazards/tsunamis-earthquakes-volcanoes/earthquakes/intensity-database-1638-1985 
 
-K-means:
+K-means: https://scikit-learn.org/stable/modules/clustering.html#k-means 
 
 The K-means algorithm clusters data by trying to separate samples in n groups of equal variance, minimizing a criterion known as the inertia or within-cluster sum-of-squares. This algorithm requires the number of clusters to be specified. 
 
